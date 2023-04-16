@@ -1,4 +1,4 @@
-//TODO turn this into something proper and use blok, because it's obvious that Process.run is shitty otherwise
+//TODO turn this into something proper and use blok, because it's obvious that 
 
 import 'dart:convert';
 import 'dart:io';
