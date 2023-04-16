@@ -28,7 +28,7 @@ createAndEnableAndStartService() {
     SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 
     # Create the systemd service file
-    cat > "${SERVICE_FILE}" << EOF
+    sudo cat > "${SERVICE_FILE}" << EOF
 [Unit]
 Description=restartAndUpgradeAurService
 After=network.target
@@ -42,16 +42,16 @@ WantedBy=multi-user.target
 EOF
 
     # Reload systemd configuration
-    systemctl daemon-reload
+    sudo systemctl daemon-reload
 
     # Enable the systemd service
-    systemctl enable "${SERVICE_NAME}.service"
+    sudo systemctl enable "${SERVICE_NAME}.service"
 
     # Start the systemd service
-    systemctl start "${SERVICE_NAME}.service"
+    sudo systemctl start "${SERVICE_NAME}.service"
 
     # Check the status of the systemd service
-    systemctl status "${SERVICE_NAME}.service"
+    sudo systemctl status "${SERVICE_NAME}.service"
 
 
 }
@@ -85,9 +85,7 @@ function showUpgradeCompleteNotification {
 
 function ensureMirrorsAndUpdate {
 
-    sudo pacman-mirrors -f 10
-    seperate
-    sudo pacman -Syyu --noconfirm
+    sudo pacman-mirrors -f 10&&sudo pacman -Syyu --noconfirm
     seperate
 
     #output=$(needrestart)
