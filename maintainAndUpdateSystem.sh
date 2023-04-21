@@ -13,10 +13,21 @@ seperate() {
 }
 
 function maintenance {
+    find ~/.cache/ -type f -atime +30 -delete
+    seperate
+    #TODO i think this no longer necessary, journalctl
     sudo journalctl --vacuum-time=2weeks
     seperate
     sudo paccache -rk1
     seperate
+    sudo pacman -Rs $(pacman -Qdtq)
+    seperate
+
+    echo "Before updating know that there might be errors lately, check them out i guess"
+    journalctl -p 3 -b
+    if [ -z "$input" ] || [ -z "$(echo "$input" | tr -d '[:space:]')" ]; then
+        seperate
+    fi
 }
 
 createAndEnableAndStartService() {
