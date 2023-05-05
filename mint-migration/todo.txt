@@ -1,0 +1,4 @@
+* migrate to mint or smth
+* work environment
+* build aur by self
+* vimtutor

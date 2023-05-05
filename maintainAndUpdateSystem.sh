@@ -16,7 +16,7 @@ function maintenance {
     find ~/.cache/ -type f -atime +30 -delete
     seperate
     #TODO i think this no longer necessary, journalctl
-    sudo journalctl --vacuum-time=2weeks
+    #sudo journalctl --vacuum-time=2weeks
     seperate
     sudo paccache -rk1
     seperate
@@ -113,7 +113,8 @@ function ensureMirrorsAndUpdate {
 
 echo 'Ensure stable electrical connection, if upgrade is interrupted system might be corrupted. Use a bootable USB stick and Timeshift to recover.'
 echo 'Revert to default themes before beginning update.'
-
+echo ''
+echo 'Don't run with sudo else notif doesn't work'
 #!/bin/bash
 
 read -p "Enter input: " input

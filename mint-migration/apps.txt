@@ -1,0 +1,12 @@
+- firefox but also min ?
+- vscode
+- github
+- krita, xp pen drivers
+- equalizer (also check settings, high frequencies)
+- something like yakuake might be nice
+- something like kde connect but actually works lmao
+- zathura
+- japanese writing, fonts
+
+autodarklightmode if doesn't exist,
+autoupdate and stuff i don't know how tho also mainteance
