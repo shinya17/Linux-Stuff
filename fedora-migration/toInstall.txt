@@ -1,0 +1,3 @@
+- flutter sdk
+- android sdks
+- i don't know if java python comes installed?

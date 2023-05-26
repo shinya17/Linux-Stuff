@@ -1,0 +1,17 @@
+- firefox but also min ?
+- vscodium (because fuck microsoft)
+- github (transition to gitlab because fuck microsoft)
+- krita, xp pen drivers
+- equalizer (also check settings, high frequencies)
+- something like yakuake might be nice (not anymore, terminal better)
+- something like kde connect but actually works lmao
+- zathura
+- japanese writing, fonts
+- vim
+- redshift (builtin)
+- vscodium
+- timeshift
+- world tv/radio/maps
+
+autodarklightmode if doesn't exist, (exists in fedora unlike stupid manjaro)
+autoupdate and stuff i don't know how tho also mainteance (just read docs)
