@@ -1,0 +1,14 @@
+there should be an option to enable or disable it
+automatically leave it to the app or manually set
+should be able to set a time/gamma value profile but for now,
+we will stick to a min and a max lmao interpolation will be used
+and there should be a time interval to update the gamma value
+(maybe brightness might be an option in the future)
+
+the question is how to update, systemd service ?
+
+the command is gnome-gamma-tool -y -g #gammavalue
+
+
+TODO. acktschually, 0.75 seems to be good even in daytime so idk lol
+just add to path at this point lol
