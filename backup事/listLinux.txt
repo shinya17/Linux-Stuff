@@ -1,0 +1,27 @@
+- personal files
+- most will go to little my archive
+- github sync (migrate to gitlab)
+
+- app data
+ + mostly i think firefox chrome to restore session
+   maybe should do a setting sync for each app probably there is
+
+- system data 
+ + bashrc 
+PATH="$PATH:/home/shinya/Programming/sdks/flutter/bin/"
+PATH="$PATH:/home/shinya/Android/Sdk/platform-tools"
+PATH="$PATH:/home/shinya/Linux-Stuff/scriptsToAddToPath"
+PATH="$PATH:/home/shinya/Linux-Stuff/fedora-migration/gnome-gamma-automation"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+- app list basically
+or maybe all packages because there were codec problems
+
+- system wide configs, the most めんどい because i forgor 
+and if i backup everything it will def crash and be a mess,
+too much incompatibility
+ + extensions list
